@@ -1,6 +1,6 @@
 import React from "react";
 import "antd/dist/reset.css";
-import SignUp from "./components/SignUp";
+import { SignUp } from "./pages/AuthLayout/SignUp";
 
 function App() {
   return (
