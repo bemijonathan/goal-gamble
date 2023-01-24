@@ -1,16 +1,11 @@
 import React from "react";
 import "antd/dist/reset.css";
-
-import { Button, DatePicker, Space, version } from "antd";
+import { SignUp } from "./pages/AuthLayout/SignUp";
 
 function App() {
   return (
     <section>
-      hello
-      <Space>
-        <DatePicker />
-        <Button type="primary">Primary Button</Button>
-      </Space>
+      <SignUp />
     </section>
   );
 }
