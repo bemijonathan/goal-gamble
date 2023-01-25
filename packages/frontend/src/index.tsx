@@ -4,6 +4,7 @@ import "./index.css";
 import "antd/dist/reset.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter as Router } from "react-router-dom";
 import { ApolloProvider } from "@apollo/react-hooks";
 import client from "./apolloClient";
 
@@ -13,7 +14,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <ApolloProvider client={client as any}>
     <React.StrictMode>
-      <App />
+      <Router>
+        <App />
+      </Router>
     </React.StrictMode>
   </ApolloProvider>
 );
