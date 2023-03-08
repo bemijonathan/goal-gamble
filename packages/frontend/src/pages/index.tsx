@@ -9,7 +9,7 @@ export const Dashboard: React.FC = () => {
   } = theme.useToken();
 
   return (
-    <Layout className="layout" style={{ height: "100vh" }}>
+    <Layout className="layout" style={{ minHeight: "100vh" }}>
       <Header>
         <div className="logo" />
         <Menu
